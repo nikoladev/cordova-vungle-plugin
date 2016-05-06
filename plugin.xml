@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-vungle-plugin"
+    version="0.0.1">
+    <name>Cordova Vungle</name>
+    <description>Plugin that allows Vungle ads to be called with JavaScript</description>
+    <!-- <license>Apache 2.0</license> -->
+    <keywords>cordova,vungle,ads,ad,windows,winjs,js,javascript</keywords>
+    <!-- <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo> -->
+    <!-- <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue> -->
+
+    <js-module src="www/vungle.js" name="Vungle">
+        <clobbers target="window.vungle" />
+    </js-module>
+
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/vungleproxy.js" name="VungleProxy">
+            <merges target="" />
+        </js-module>
+        <framework src="src/windows/EchoRuntimeComponent.winmd" custom="true"/>
+    </platform>
+
+    <!-- other platforms -->
+</plugin>
