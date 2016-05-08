@@ -24,7 +24,7 @@ Vungle.adPlayable = function (callback) {
     );
 };
 
-window.Vungle.playAd = function (callback) {
+Vungle.playAd = function (callback) {
     cordova.exec(
         callback,
         function (errMsg) {

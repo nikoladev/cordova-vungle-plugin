@@ -15,7 +15,7 @@
 
     <!-- windows -->
     <platform name="windows">
-        <js-module src="src/windows/vungleproxy.js" name="VungleProxy">
+        <js-module src="src/windows/vungleproxy.js" name="Vungle">
             <merges target="" />
         </js-module>
         <framework src="src/windows/VungleComponent.winmd" custom="true"/>
