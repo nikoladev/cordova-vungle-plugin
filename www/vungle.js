@@ -1,6 +1,6 @@
-window.Vungle = {};
+var Vungle = {};
 
-window.Vungle.setUp = function (appId, callback) {
+Vungle.setUp = function (appId, callback) {
     cordova.exec(
         callback,
         function (errMsg) {
@@ -12,7 +12,7 @@ window.Vungle.setUp = function (appId, callback) {
     );
 };
 
-window.Vungle.adPlayable = function (callback) {
+Vungle.adPlayable = function (callback) {
     cordova.exec(
         callback,
         function (errMsg) {
@@ -35,3 +35,5 @@ window.Vungle.playAd = function (callback) {
         []
     );
 };
+
+module.exports = Vungle;
