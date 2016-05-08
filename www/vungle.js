@@ -1,6 +1,4 @@
-var Vungle = {
-
-};
+window.Vungle = {};
 
 window.Vungle.setUp = function (appId, callback) {
     cordova.exec(
