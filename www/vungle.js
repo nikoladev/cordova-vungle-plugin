@@ -6,7 +6,8 @@ module.exports = {
                 console.log("ERROR:", errMsg);
             },
             "VunglePlugin",
-            "setUp", [appId]
+            "setUp",
+            appId
         );
     },
     adPlayable: function (callback) {
