@@ -19,6 +19,7 @@
             <merges target="" />
         </js-module>
         <framework src="src/windows/VungleComponent.winmd" custom="true"/>
+        <framework src="src/windows/VungleSDK.winmd" custom="true"/>
     </platform>
 
     <!-- other platforms -->
